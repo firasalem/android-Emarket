@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.khaireddine.e_market.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+   <android.support.v7.widget.CardView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="16dp"
+       >
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_logo"      />
+   </android.support.v7.widget.CardView>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+      <android.support.v7.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="16dp"
+          android:layout_marginBottom="16dp"
+         >
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="16dp"
+
+             >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/title"
+                android:layout_alignStart="@+id/title"
+                android:layout_alignTop="@+id/title"
+                android:src="@drawable/ic_map"
+                android:onClick="To_Map"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find your Market"
+                android:textColor="@android:color/holo_red_light"
+                android:textStyle="bold" />
+         </RelativeLayout>
+
+      </android.support.v7.widget.CardView>
+
+      <android.support.v7.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="16dp"
+          android:layout_marginBottom="16dp"
+          >
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/ic_pub" />
+      </android.support.v7.widget.CardView>
+   </LinearLayout>
+   <android.support.v7.widget.CardView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="16dp"
+       >
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_market"
+          android:onClick="to_produit"/>
+   </android.support.v7.widget.CardView>
+   <android.support.v7.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="16dp">
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+         <TextView
+             android:id="@+id/header_connect"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Connect to your account to past your commands"
+             android:textAlignment="center"
+             android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" />
+
+         <Button
+             android:id="@+id/button_connect"
+             style="@style/Widget.AppCompat.Button.Borderless.Colored"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/header_connect"
+             android:layout_centerHorizontal="true"
+             android:text="Connect"
+             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+             android:textColor="@android:color/holo_red_light"
+             android:textSize="24sp"
+             android:textStyle="bold"
+             android:onClick="To_Connect"
+             />
+
+         <TextView
+             android:id="@+id/header_ou"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/button_connect"
+             android:text="Or"
+             android:textAlignment="center"
+             android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" />
+
+         <Button
+             style="@style/Widget.AppCompat.Button.Borderless.Colored"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/header_ou"
+             android:layout_centerHorizontal="true"
+             android:text="Create an account"
+             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+             android:textColor="@android:color/holo_red_light"
+             android:textSize="24sp"
+             android:textStyle="bold"
+             android:onClick="To_Create_Account"
+             />
+      </RelativeLayout>
+   </android.support.v7.widget.CardView>
+</LinearLayout>
+   </ScrollView>
+
